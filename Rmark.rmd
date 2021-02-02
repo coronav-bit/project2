@@ -2,7 +2,8 @@
 title: "Rmark"
 author: "Iraki Maina"
 date: "2/2/2021"
-output: github_document
+output: html_document 
+keep_md: true
 ---
 '''{r}
 library(dplyr)
