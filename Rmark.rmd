@@ -5,10 +5,10 @@ date: "2/2/2021"
 output: html_document 
 keep_md: true
 ---
-'''{r}
+```{r}
 library(dplyr)
 library(dslabs)
 data(murders)
 head(murders)
 
-'''
+```
