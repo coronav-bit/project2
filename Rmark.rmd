@@ -2,13 +2,12 @@
 title: "Rmark"
 author: "Iraki Maina"
 date: "2/2/2021"
-output: html_document 
-keep_md: true
+output: github_document
 ---
-'''{r}
+```{r}
 library(dplyr)
 library(dslabs)
 data(murders)
 head(murders)
 
-'''
+```
