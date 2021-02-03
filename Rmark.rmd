@@ -4,10 +4,23 @@ author: "Iraki Maina"
 date: "2/2/2021"
 output: github_document
 ---
+## Load dplyr and dslabs.
 ```{r}
+library(brew)
 library(dplyr)
 library(dslabs)
+```
+## Load murders dataset from dslabs.
+```{r}
 data(murders)
+```
+## Print first six lines of table murders.
+```{r}
 head(murders)
 
+```
+## Create plot of population against state.
+```{r}
+library(ggplot2)
+murders %>% ggplot(aes(state,population)) + geom_point()+theme(axis.text.x = element_text(angle = 90))
 ```
